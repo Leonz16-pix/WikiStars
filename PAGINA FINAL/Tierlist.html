@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiStars|Tier List</title>
+    <link rel="stylesheet" href=".CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGEN/LOGO.png">
+    </head>
+    <body>
+        <div class="div1">
+            <h1>Tier List y Cambios de balance</h1>
+            <img class="responsive-img-logobat" src="IMAGEN/WK.png">
+            <input type="text" id="buscador" placeholder="Buscar en la tabla...">
+        </div>
+        <table id="tabla">
+            <tbody>
+                <tr>
+                    <td><a href="INDEX.html">Inicio</a></td>
+                    <td><a href="Tierlist.html">Tier List</a></td>
+                    <td><a href="buildsymodos.html">Builds</a></td>
+                    <td><a href="notas de la actualizacion.html">Notas de la actualización</a></td>
+                    <td><a href="https://event.supercell.com/brawlstars/es">Champions en vivo</a></td>
+                    <td><a href="giaparadesafios.html">Guía para desafíos</a></td>
+                    <td><a href="comnidad.html">Comunidad</a></td>
+                    <td><a href="creadores.html">Creadores</a></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <script>
+            const buscador = document.getElementById("buscador");
+            const tabla = document.getElementById("tabla");
+            buscador.addEventListener("input", function() {
+                const filtro = this.value.toLowerCase(); 
+                const filas = tabla.getElementsByTagName("tr"); 
+                for (let i = 0; i < filas.length; i++) {
+                    const fila = filas[i];
+                    const celdas = fila.getElementsByTagName("td"); 
+                    let mostrarFila = false;
+                    for (let j = 0; j < celdas.length; j++) {
+                        const textoCelda = celdas[j].textContent.toLowerCase(); 
+                        if (textoCelda.includes(filtro)) {
+                            celdas[j].style.display = ""; 
+                            mostrarFila = true;
+                        } else {
+                            celdas[j].style.display = "none";
+                        }
+                    }
+                    if (mostrarFila) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
+                }
+            });
+        </script>
+        <img class="img1" src="IMAGEN/CAMBIO DE BALANCE Y TIER LIST.jpg">
+        <br>
+        <h2> Cambios de balance</h2>
+        Con la nueva actualizacion llegaron los nevos cambios de balance y con ello varios brawlers han escalado en el 
+        meta actal para el competitivo y en general para cualqier modo de juego. A continacion se mostrara la neva Tier list
+        Marzo 2025, pero antes veamos algnos nevos cambios de balance que fueron añadidos recientemente.
+        
+        <h3>HIPERCARGAS</h3>
+En esta actualización, 12 brawlers recibirán hipercargas. Se lanzarán en 2 tandas, y cada una será de 6 hipercargas.
+
+<h4>PRIMERA TANDA</h4>
+<ul>
+    <li>CARL: TORBELLINO ARDIENTE. Carl deja una estela de rocas ardientes en el suelo que infligen daño a los enemigos que las tocan.</li>
+    <li>MANDY: AZÚCAR PARA TODOS. Mandy dispara su súper en tres direcciones distintas.</li>
+    <li>HANK: PESCADITOS PRECISOS. Hank ataca con torpedos mejorados que se dirigen directamente a su objetivo.</li>
+    <li>BO: TRAMPA PARA OSOS. El súper de Bo coloca 5 minas en lugar de 3. Estas minas no reemplazan a las que ya hubiera colocado antes con su súper, así que es posible tener más de 3 minas a la vez en el mapa.</li>
+    <li>BEA: LARGA VIDA A LA REINA. Los proyectiles del súper de Bea se dividen en dos al alcanzar su distancia máxima (y al impactar), lo que aumenta aún más la distancia y la amplitud de su súper.</li>
+    <li>SEÑOR P: SUPERBOTONES EN ACCIÓN. La base del señor P ahora genera botones mucho más poderosos. Puede haber dos de estos "superbotones" activos al mismo tiempo.</li>
+</ul>
+<img class="img2" src="IMAGEN/hipercargas.jpeg" alt="">
+De momento estas son todas la nevas hipercargas añadids a brawl stars en esta actalizacion.
+Ahora pasemos con los bff y debff que algnos brawlers recibieron en esta ltima actualizacion
+<h3>MEJORAS</h3>
+<ul>
+<li><p>OLLIE</p></li>
+<p>El daño de su ataque principal pasa de 850 a 1000.</p>
+<p>Súper: Ollie ya no se silencia a sí mismo, pero usa un 50 % de su munición máxima.</p>
+<li><p>MEEPLE</p></li>
+<p>La velocidad de recarga del ataque principal pasa de 2 a 1.9.</p>
+<li><p>RUFFS</p></li>
+<p>Escudo y daño de la hipercarga: pasan de un 10 % a un 15 %.</p>
+</ul>
+<h3>DEBILITACIONES</h3>
+<ul>
+<li><p>GUS</p></li>
+<p>El daño de su ataque principal pasa de 1120 a 1080.</p>
+<p>El daño del gadget Explosión espiritual pasa de 2240 a 2160.</p>
+<li><p>STU</p></li>
+<p>La cantidad de salud máxima que regenera Chute de adrenalina pasa de un 10 % a un 8 %.</p>
+<li><p>PENNY</p></li>
+<p>El ratio de carga de la hipercarga pasa de 35 a 30.</p>
+<li><p>JUJU</p></li>
+<p>El ratio de carga del súper pasa de 90 a 72. (Pasa a necesitar 6 golpes sobre tierra en lugar de 5 y 7 golpes sobre hierba y agua en lugar de 6.)</p>
+<li><p>MAX</p></li>
+<p>El ratio de carga de la hipercarga pasa de 40 a 35.</p>
+<li><p>RICO</p></li>
+<p>El ratio de carga de la hipercarga pasa de 40 a 35.</p>
+<li><p>LOU</p></li>
+<p>El ratio de carga de la hipercarga pasa de 40 a 30.</p>
+<h3>OTROS CAMBIOS</h3>
+<li><p>KENJI</p></li>
+<p>Ahora muestra con precisión el lugar al que va a volver tras usar el súper.</p>
+</ul>
+<h3>Tier List </h3>
+!Sabesmos que lo has estado esperando¡ Por eso acontinacion te dejamos la tier list perfecta para el competitivo y calquier modo de juego
+esperamos que la disfrutes, la sepas usar bien, y te sirva para esta nueva y actualizada temporada del competitivo.
+<br><br>
+<img class="img4" src="IMAGEN/tier list.jpeg" >
+        <br>
+        <div class="div2">
+            Contacto: Telefono 1: 833-153-85-35
+                    <p>Telefono 2: 833-539-58-76</p>
+                    <p>Correo 1: leonardoramiere@gmail.com</p>
+                    <p>Correo 2: niggabro@gmail.com</p>
+                    <ul>
+                        <li><p><td><a href="practicas/practica 1.html">Practica 1</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 2.html">Practica 2</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 3.html">Practica 3</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 4.html">Practica 4</a></td></p></li>
+                    </ul>
+        </div>
+    </body>
+</html>

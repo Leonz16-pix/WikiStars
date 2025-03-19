@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiStars</title>
+    <link rel="stylesheet" href=".CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGEN/LOGO.png">
+    </head>
+    <body>
+        <div class="div1">
+            <h1>Guia para desfios</h1>
+            <img class="responsive-img-logobat" src="IMAGEN/WK.png">
+            <input type="text" id="buscador" placeholder="Buscar en la tabla...">
+        </div>
+        <table id="tabla">
+            <tbody>
+                <tr>
+                    <td><a href="INDEX.html">Inicio</a></td>
+                    <td><a href="Tierlist.html">Tier List</a></td>
+                    <td><a href="buildsymodos.html">Builds</a></td>
+                    <td><a href="notas de la actualizacion.html">Notas de la actualización</a></td>
+                    <td><a href="https://event.supercell.com/brawlstars/es">Champions en vivo</a></td>
+                    <td><a href="giaparadesafios.html">Guía para desafíos</a></td>
+                    <td><a href="comnidad.html">Comunidad</a></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <script>
+            const buscador = document.getElementById("buscador");
+                const tabla = document.getElementById("tabla");
+                buscador.addEventListener("input", function() {
+                const filtro = this.value.toLowerCase(); 
+                const filas = tabla.getElementsByTagName("tr"); 
+                    for (let i = 0; i < filas.length; i++) {
+                    const fila = filas[i];
+                    const celdas = fila.getElementsByTagName("td"); 
+                    let mostrarFila = false;
+                    for (let j = 0; j < celdas.length; j++) {
+                        const textoCelda = celdas[j].textContent.toLowerCase(); 
+                        if (textoCelda.includes(filtro)) {
+                            celdas[j].style.display = ""; 
+                            mostrarFila = true; 
+                        } else {
+                            celdas[j].style.display = "none"; 
+                        }
+                    }
+                    if (mostrarFila) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
+                }
+            });
+        </script>
+        <img class="img1" src="IMAGEN/desafio.jpg">
+        <br><br>
+        <h2>Guía de desafio Championships</h2>
+        <img class="img3" src="IMAGEN/giadechampions.jpeg" alt="">
+        <h2>Drafteo para rankeds</h2>
+        <h3>Hockey</h3>
+        <img class="img2" src="IMAGEN/drafthockey.jpeg" alt="">
+        <br><br>
+        <h3>Drafteo balon</h3>
+        <img src="IMAGEN/draftbalon.jpeg" alt="">
+        <br><br>
+        <h3>Drafteo Atrapagemas</h3>
+        <img src="IMAGEN/draftatrapagemas.jpeg" alt="">
+        <br><br>
+        <div class="div2">
+            Contacto: Telefono 1: 833-153-85-35
+                    <p>Telefono 2: 833-539-58-76</p>
+                    <p>Correo 1: leonardoramiere@gmail.com</p>
+                    <p>Correo 2: niggabro@gmail.com</p>
+                    <ul>
+                        <li><p><td><a href="practicas/practica 1.html">Practica 1</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 2.html">Practica 2</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 3.html">Practica 3</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 4.html">Practica 4</a></td></p></li>
+                    </ul>
+        </div>
+    </body>
+</html>

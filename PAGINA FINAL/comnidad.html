@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiStars</title>
+    <link rel="stylesheet" href=".CSS/estilo.css">
+    <link rel="stylesheet" href="script.js/script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGEN/LOGO.png">
+    </head>
+    <body>
+        <div class="div1">
+            <h1>Comunidad</h1>
+            <img class="responsive-img-logobat" src="IMAGEN/WK.png">
+            <input type="text" id="buscador" placeholder="Buscar en la tabla...">
+        </div>
+        <table id="tabla">
+            <tbody>
+                <tr>
+                    <td><a href="INDEX.html">Inicio</a></td>
+                    <td><a href="Tierlist.html">Tier List</a></td>
+                    <td><a href="buildsymodos.html">Builds</a></td>
+                    <td><a href="notas de la actualizacion.html">Notas de la actualización</a></td>
+                    <td><a href="https://event.supercell.com/brawlstars/es">Champions en vivo</a></td>
+                    <td><a href="giaparadesafios.html">Guía para desafíos</a></td>
+                    <td><a href="comnidad.html">Comunidad</a></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <script>
+            const buscador = document.getElementById("buscador");
+            const tabla = document.getElementById("tabla");
+            buscador.addEventListener("input", function() {
+                const filtro = this.value.toLowerCase();
+                const filas = tabla.getElementsByTagName("tr");
+                for (let i = 0; i < filas.length; i++) {
+                    const fila = filas[i];
+                    const celdas = fila.getElementsByTagName("td");
+                    let mostrarFila = false;
+                    for (let j = 0; j < celdas.length; j++) {
+                        const textoCelda = celdas[j].textContent.toLowerCase();
+                        if (textoCelda.includes(filtro)) {
+                            celdas[j].style.display = "";
+                            mostrarFila = true;
+                        } else {
+                            celdas[j].style.display = "none";
+                        }
+                    }
+                    if (mostrarFila) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
+                }
+            });
+        </script>
+        <body class="comnidad">
+            <div id="register">
+                <h2>Registrarse</h2>
+                <input type="text" id="username" placeholder="Ingresa tu nombre">
+                <button onclick="registerUser()">Entrar</button>
+            </div>
+            <div id="main" style="display: none;">
+                <header>
+                    <h1>CulbStars</h1>
+                    <div class="dropdown">
+                        <button class="dropbtn">Mi Cuenta</button>
+                        <div class="dropdown-content">
+                            <a href="#" id="profileLink">Perfil</a>
+                            <a href="#" onclick="logout()">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="container">
+                    <main class="feed">
+                        <h3>Publicar algo:</h3>
+                        <textarea id="postContent" placeholder="¿Qué estás pensando?" rows="4" cols="50"></textarea><br><br>
+                        <input type="file" id="imageInput" accept="image/*" style="display:none;" onchange="previewImage()">
+                        <label for="imageInput" class="image-upload-btn">Subir Imagen</label>
+                        <button onclick="createPost()">Publicar</button>
+                        <hr>
+                        <div class="container" id="posts"></div>
+                    </main>
+                </div>
+            <script src="script.js/script.js"></script>
+        </body>
+        </html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiStars|Builds</title>
+    <link rel="stylesheet" href=".CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGEN/LOGO.png">
+    </head>
+    <body>
+        <div class="div1">
+            <h1>Notas de la actualizacion</h1>
+            <img class="responsive-img-logobat" src="IMAGEN/WK.png">
+            <input type="text" id="buscador" placeholder="Buscar en la tabla...">
+        </div>
+        <table id="tabla">
+            <tbody>
+                <tr>
+                    <td><a href="INDEX.html">Inicio</a></td>
+                    <td><a href="Tierlist.html">Tier List</a></td>
+                    <td><a href="buildsymodos.html">Builds</a></td>
+                    <td><a href="notas de la actualizacion.html">Notas de la actualización</a></td>
+                    <td><a href="https://event.supercell.com/brawlstars/es">Champions en vivo</a></td>
+                    <td><a href="giaparadesafios.html">Guía para desafíos</a></td>
+                    <td><a href="comnidad.html">Comunidad</a></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <script>
+            const buscador = document.getElementById("buscador");
+            const tabla = document.getElementById("tabla");
+            buscador.addEventListener("input", function() {
+                const filtro = this.value.toLowerCase(); 
+                const filas = tabla.getElementsByTagName("tr");    
+                for (let i = 0; i < filas.length; i++) {
+                    const fila = filas[i];
+                    const celdas = fila.getElementsByTagName("td"); 
+                    let mostrarFila = false;
+                    for (let j = 0; j < celdas.length; j++) {
+                        const textoCelda = celdas[j].textContent.toLowerCase(); 
+                        if (textoCelda.includes(filtro)) {
+                            celdas[j].style.display = "";
+                            mostrarFila = true;
+                        } else {
+                            celdas[j].style.display = "none";
+                        }
+                    }
+                    if (mostrarFila) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
+                }
+            });
+        </script>
+        <img class="img1" src="IMAGEN/buildsymodos.jpg">
+        <br><br>
+        <h2>🏆 Domina Brawl Stars con las Mejores Builds y Estrategias</h2>
+        <p>¿Quieres llevar tu juego al siguiente nivel? Brawl Stars es más que solo disparar y esquivar; elegir la build correcta y jugar con la mejor estrategia puede marcar la diferencia entre la victoria y la derrota</p>
+        <p>En esta página encontrarás las mejores combinaciones de gadgets, star powers y equipamientos para cada brawler, además de tácticas avanzadas para cada modo de juego. Ya sea que juegues competitivo o solo quieras subir copas más rápido, aquí tienes todo lo que necesitas para ser un pro en la arena.</p>
+        <p>🔥 ¡Prepárate para ganar más partidas y dominar el juego como nunca antes</p>
+        
+Shelly
+<br><br>
+<img class="img2" src="IMAGEN/shellybym.jpeg" alt="">
+Colt
+<br><br>
+<img class="img2" src="IMAGEN/coltbym.jpeg" alt="">
+<br><br>
+Emz
+<br><br>
+<img class="img2" src="IMAGEN/emzbym.jpeg" alt="">
+<br><br>
+Stu
+<br><br>
+<img class="img2" src="IMAGEN/stbym.jpeg" alt="">
+<br><br>
+<h3>Brawlers Raros:</h3>
+Barley
+<br><br>
+<img class="img2" src="IMAGEN/barrleybym.jpeg" alt="">
+<br><br>
+Poco
+<br><br>
+<img class="img2" src="IMAGEN/pocobym.jpeg" alt="">
+<br><br>
+<h3>Brawlers Super Raros:</h3>
+Penny
+<br><br>
+<img class="img2" src="IMAGEN/penny bym.jpeg" alt="">
+<br><br>
+<h3>Brawlers Épicos:</h3>
+Berry
+<br><br>
+<img class="img2" src="IMAGEN/berry bym.jpeg" alt="">
+<br><br>
+Piper
+<br><br>
+<img class="img2" src="IMAGEN/piper bym.jpeg" >
+<br><br>
+Griff
+<br><br>
+<img class="img2" src="IMAGEN/griff bym.jpeg">
+<br><br>
+Grom
+Hank
+<br><br>
+<img class="img2" src="IMAGEN/hank bym.jpeg" alt="">
+<br><br>
+Mandy
+<br><br>
+<img class="img2" src="IMAGEN/mandybym.jpeg" alt="">
+Maisie
+<br><br>
+<img class="img2" src="IMAGEN/maisie bym.jpeg" >
+<br><br>
+Colette
+<img class="img2" src="IMAGEN/qlettebym.jpeg" alt="">
+Ash
+<br><br>
+<img class="img2" src="IMAGEN/ash bym.jpeg" alt="">
+<br><br>
+Meeple
+<br><br>
+<img class="img2" src="IMAGEN/meeple bym.jpeg" alt="">
+<br><br>
+shade
+<br><br>
+<img class="img2" src="IMAGEN/shade bym.jpeg" alt="">
+<br><br>
+<h3>Brawlers Míticos:</h3>
+<br><br>
+Ollie 
+<br><br>
+<img class="img2" src="IMAGEN/Ollie bym.jpeg" alt="">
+<br><br>
+Señor P.
+<br><br>
+<img class="img2" src="IMAGEN/mrp bym.jpeg" alt="">
+<br><br>
+Buzz
+<br><br>
+<img class="img2" src="IMAGEN/bzzbym.jpeg" alt="">
+Eve
+<br><br>
+<img class="img2" src="IMAGEN/eve bym.jpeg" alt="">
+<br><br>
+Janet
+<br><br>
+<img class="img2" src="IMAGEN/janet bym.jpeg" alt="">
+<br><br>
+Willow
+<br><br>
+<img class="img2" src="IMAGEN/willow bym.jpeg" alt="">
+<br><br>
+Gray
+<br><br>
+<img class="img2" src="IMAGEN/gray bym.jpeg" alt="">
+<br><br>
+Lou
+<br><br>
+<img class="img2" src="IMAGEN/lo bym.jpeg" alt="">
+<br><br>
+Charlie
+<br><br>
+<img class="img2" src="IMAGEN/bodriocharliebym.jpeg" alt="">
+Melodie
+<br><br>
+<img class="img2" src="IMAGEN/melodie bym.jpeg" alt="">
+<br><br>
+<h3>Brawlers Legendarios:</h3>
+Sandy
+<br><br>
+<img class="img2" src="IMAGEN/sandybym.jpeg" alt="">
+<br><br>
+Meg
+<br><br>
+<img class="img2" src="IMAGEN/megbym.jpeg" alt="">
+<br><br>
+Surge
+<br><br>
+<img class="img2" src="IMAGEN/srgebym.jpeg" alt="">
+<br><br>
+Kenji
+<br><br>
+<img class="img2" src="IMAGEN/kenji bym.jpeg" alt="">
+<br><br>
+Draco  
+<br><br>
+<img class="img2" src="IMAGEN/draco bym.jpeg" alt="">
+<br><br>
+<div class="div2">
+    Contacto: Telefono 1: 833-153-85-35
+            <p>Telefono 2: 833-539-58-76</p>
+            <p>Correo 1: leonardoramiere@gmail.com</p>
+            <p>Correo 2: niggabro@gmail.com</p>
+            <ul>
+                <li><p><td><a href="practicas/practica 1.html">Practica 1</a></td></p></li>
+                <li><p><td><a href="practicas/practica 2.html">Practica 2</a></td></p></li>
+                <li><p><td><a href="practicas/practica 3.html">Practica 3</a></td></p></li>
+                <li><p><td><a href="practicas/practica 4.html">Practica 4</a></td></p></li>
+            </ul>
+</div>
+</body>
+</html>

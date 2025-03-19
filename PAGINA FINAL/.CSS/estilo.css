@@ -1,0 +1,278 @@
+.div1{
+    background-color: black; 
+    font-size: 17px;
+    border: 1px;
+    padding: 5px;
+    text-align: center;
+}
+h1{
+    color: black;
+    font-family: 'Titan One', cursive;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.404);
+    -webkit-text-stroke: 2px white;
+}
+h2{
+    color: rgba(255, 255, 255, 0.596);
+}
+body{
+    background-color: rgb(176, 116, 202); 
+    color: black; 
+    font-family:'Noto Sans Display', sans-serif;
+}
+.titulo-maq{
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+td{
+    width: 10%;
+    text-align: center;
+}
+li{
+    text-indent: 20px;
+}
+h3{
+    color: white;
+    line-height: 1.6;
+}
+h4{
+    color: white;
+}
+.img1{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+.img3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 400px;
+}
+.img4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 400px;
+}
+.div2{
+    background-color: black; 
+    border: 1px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.808);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.responsive-img-logobat {
+    width: 100px; 
+    max-width: 100%;
+    height: auto; 
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    display: block;
+}
+#buscador {
+    padding: 10px;
+    width: 50%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: hsl(240, 100%, 68%);
+    border: 1px solid #000; 
+    margin-top: 0px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+}
+.oculta {
+    display: none;
+}
+.comnidad {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    text-align: center;
+}
+
+#register {
+    margin-top: 100px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.feed {
+    background: white;
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.likeBtn {
+    background-color: #1877F2; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.likeBtn:hover {
+    background-color: #135ab7; 
+}
+
+.likesCount {
+    font-size: 14px;
+    color: gray;
+    margin-left: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #1877F2;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #135ab7; 
+}
+.post p {
+    margin: 0; 
+    padding: 5px 0;
+}
+
+.post h4 {
+    margin: 0; 
+    padding-bottom: 10px; 
+    color: #1877F2;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #888; 
+}
+.image-upload-btn {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s; 
+}
+.image-upload-btn:hover {
+    background-color: #45a049; 
+}
+.preview-container {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+}
+
+.preview-container img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.post img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.post button {
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.post button:hover {
+    background-color: #45a049;
+}

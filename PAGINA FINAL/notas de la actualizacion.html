@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiStars|Notas de actalizacion</title>
+    <link rel="stylesheet" href=".CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGEN/LOGO.png">
+    </head>
+    <body>
+        <div class="div1">
+            <h1>Notas de la actualizacion</h1>
+            <img class="responsive-img-logobat" src="IMAGEN/WK.png">
+            <input type="text" id="buscador" placeholder="Buscar en la tabla...">
+        </div>
+        <table id="tabla">
+            <tbody>
+                <tr>
+                    <td><a href="INDEX.html">Inicio</a></td>
+                    <td><a href="Tierlist.html">Tier List</a></td>
+                    <td><a href="buildsymodos.html">Builds</a></td>
+                    <td><a href="notas de la actualizacion.html">Notas de la actualización</a></td>
+                    <td><a href="https://event.supercell.com/brawlstars/es">Champions en vivo</a></td>
+                    <td><a href="giaparadesafios.html">Guía para desafíos</a></td>
+                    <td><a href="comnidad.html">Comunidad</a></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <script>
+            const buscador = document.getElementById("buscador");
+            const tabla = document.getElementById("tabla");
+            buscador.addEventListener("input", function() {
+                const filtro = this.value.toLowerCase(); 
+                const filas = tabla.getElementsByTagName("tr"); 
+                for (let i = 0; i < filas.length; i++) {
+                    const fila = filas[i];
+                    const celdas = fila.getElementsByTagName("td"); 
+                    let mostrarFila = false;
+                    for (let j = 0; j < celdas.length; j++) {
+                        const textoCelda = celdas[j].textContent.toLowerCase(); 
+                        if (textoCelda.includes(filtro)) {
+                            celdas[j].style.display = "";
+                            mostrarFila = true; 
+                        } else {
+                            celdas[j].style.display = "none"; 
+                        }
+                    }
+                    if (mostrarFila) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
+                }
+            });
+        </script>
+        <img class="img1" src="IMAGEN/bs ranked.jpg">
+        <br>
+        <h2>Rankeds Rediseñado</h2>
+        <h3>Notas importantes</h3>
+La temporada actual de partidas clasificatorias de Good Randoms será más corta. La nueva temporada de partidas clasificatorias comienza con la próxima actualización el 25 de febrero
+Los cambios a continuación deberían ser definitivos, pero las cosas podrían cambiar cuando se lance la nueva partida clasificatoria
+DE TODOS MODOS, se avecinan grandes cambios, ¡así que vamos a analizarlos!
+Nuestros principales objetivos con la renovación de las partidas clasificatorias son:
+
+<ul>
+    <li>Hacer que las partidas clasificatorias sean más competitivas para los jugadores expertos</li>
+    <li>Alentar a más jugadores a participar en las partidas clasificatorias y despertar su interés en mejorar en Brawl</li>
+    <li>Recompensar más a los jugadores por su tiempo y esfuerzo</li>
+    <li>Mantener cada temporada fresca y emocionante</li>
+    <li>Monetizar mejor el juego y tener una fuente constante para sustentar las actividades de deportes electrónicos de Brawl</li>
+</ul>
+Pro Pass: el nuevo sistema de progresión de partidas clasificatorias
+El modo Ranked tendrá un sistema de progresión similar al Brawl Pass, llamado Pro Pass. También tiene una modalidad gratuita y una modalidad paga, pero a diferencia del Brawl Pass, el Pro Pass tiene una duración de 4 meses. 
+La razón por la que tiene una duración de 4 meses es porque estará vinculado a los principales eventos de deportes electrónicos del año. El primero es la Brawl Cup en mayo, el Last Chance Qualifier en septiembre y las Finales Mundiales en noviembre. El plan actual es tener 3 Pro Passes por año.
+Para progresar en el Pase Pro, debes obtener XP del Pase Pro, y puedes obtenerla de:
+<ul>
+    <li>Ganar partidas clasificatorias (similar a la XP diaria del Pase Brawl para el Pase Brawl, pero la XP del Pase Pro se actualiza semanalmente y debes ganar la partida)</li>
+    <li>Subir de rango</li>
+    <li>Mirar e interactuar con transmisiones de deportes electrónicos en event.brawlstars.com durante todo el año</li>
+    <li>No es OBLIGATORIO que mires deportes electrónicos para completar el Pase, pero puede acelerar tu progreso (especialmente si no alcanzas rangos más altos) y otorgarte más recompensas de cola</li>
+    <li>Comprar el Pase Pro, que otorga progreso instantáneo y 2x XP del Pase Pro (y duplica el límite semanal)</li>
+</ul>
+¡La pista gratuita incluye mejores recompensas que el antiguo sistema de clasificación y un Starr Drop legendario como recompensa de cola!
+Mira el gráfico a continuación:
+<br><br>
+<img class="img2" src="IMAGEN/rec de rankeds.jpeg" >
+<h2>Nueva skin de rareza pro</h2>
+
+Como viste arriba, estamos presentando una nueva rareza de skin: ¡Pro!
+Los skins Pro se pueden mejorar hasta 11 veces recolectando elementos de "Mejora de skin" del Pase Pro (o en los Drops de clasificación 8 meses después del lanzamiento del skin)
+Cada mejora te dará una mejora visual para el skin, incluido un nuevo efecto visual de aparición, u otros elementos cosméticos, incluida una nueva tarjeta de batalla de luchador animada
+¡En cada temporada, puedes obtener un skin de nivel legendario en la pista gratuita del Pase!
+La lista de mejoras es la siguiente:
+
+<p>1.ª mejora: pista gratuita: [Aspecto base]</p>
+<p>2.ª mejora: pista gratuita: pin x1, foto de perfil x1 y spray x1</p>
+<p>3.ª mejora: pista gratuita: efectos de ataque especial</p>
+<p>4.ª mejora: pista gratuita: [Modelo de aspecto mejorado]</p>
+<p>5.ª mejora: pista gratuita: pins x8</p>
+<p>6.ª mejora: pista gratuita: efectos especiales de derribo</p>
+<p>7.ª mejora: pista paga: carta de luchador animada (¡NUEVO DISEÑO ESTÉTICO!)</p>
+<p>8.ª mejora: pista paga: efectos especiales de aparición y reaparición (¡NUEVO DISEÑO ESTÉTICO!)</p>
+<p>9.ª mejora: pista paga: [Forma de hipercarga]</p>
+<p>10.ª mejora: pista paga: [Chroma 1]</p>
+<p>11.ª mejora: pista paga: [Chroma 2]</p>
+
+El primer aspecto profesional será para Colt (porque, obviamente, no tiene suficientes aspectos).
+¡Echa un vistazo al adelanto del aspecto base y algunos conceptos!
+<br><br><br>
+<img class="img3" src="IMAGEN/skin colt.jpeg" >
+<br>
+<h2>Nuevas rachas diarias.</h2>
+<img class="img4" src="IMAGEN/racha.jpeg" alt="">
+<div class="div2">
+    Contacto: Telefono 1: 833-153-85-35
+    <p>Telefono 2: 833-539-58-76</p>
+    <p>Correo 1: leonardoramiere@gmail.com</p>
+    <p>Correo 2: niggabro@gmail.com</p>
+    <ul>
+        <li><p><td><a href="practicas/practica 1.html">Practica 1</a></td></p></li>
+        <li><p><td><a href="practicas/practica 2.html">Practica 2</a></td></p></li>
+        <li><p><td><a href="practicas/practica 3.html">Practica 3</a></td></p></li>
+        <li><p><td><a href="practicas/practica 4.html">Practica 4</a></td></p></li>
+    </ul>
+</div>
+    </body>
+</html>

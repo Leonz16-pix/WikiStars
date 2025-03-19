@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiStars</title>
+    <link rel="stylesheet" href=".CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="IMAGEN/LOGO.png">
+    </head>
+    <body>
+        <div class="div1">
+            <h1>WikiStars</h1>
+            <h2>Contenido de BS actualizado</h2>
+            <img class="responsive-img-logobat" src="IMAGEN/WK.png">
+            <input type="text" id="buscador" placeholder="Buscar en la tabla...">
+        </div>
+        <table id="tabla">
+            <tbody>
+                <tr>
+                    <td><a href="INDEX.html">Inicio</a></td>
+                    <td><a href="Tierlist.html">Tier List</a></td>
+                    <td><a href="buildsymodos.html">Builds</a></td>
+                    <td><a href="notas de la actualizacion.html">Notas de la actualización</a></td>
+                    <td><a href="https://event.supercell.com/brawlstars/es">Champions en vivo</a></td>
+                    <td><a href="giaparadesafios.html">Guía para desafíos</a></td>
+                    <td><a href="comnidad.html">Comunidad</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            const buscador = document.getElementById("buscador");
+            const tabla = document.getElementById("tabla");
+            buscador.addEventListener("input", function() {
+                const filtro = this.value.toLowerCase(); 
+                const filas = tabla.getElementsByTagName("tr");
+                for (let i = 0; i < filas.length; i++) {
+                    const fila = filas[i];
+                    const celdas = fila.getElementsByTagName("td");
+                    let mostrarFila = false;
+                    for (let j = 0; j < celdas.length; j++) {
+                        const textoCelda = celdas[j].textContent.toLowerCase();
+                        if (textoCelda.includes(filtro)) {
+                            celdas[j].style.display = ""; 
+                            mostrarFila = true;
+                        } else {
+                            celdas[j].style.display = "none";
+                        }
+                    }
+                    if (mostrarFila) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
+                }
+            });
+        </script>
+        <img class="img1" src="IMAGEN/bs.jpeg">
+        <br><br>
+        Brawl Stars es un videojuego multijugador para móviles disponible en Android y iOS, desarrollado por Supercell y lanzado globalmente en 2018.1​ La versión beta del juego fue lanzada el 14 de junio de 2017 solo para Canadá, Australia y Nueva Zelanda con temáticas simples y mecánicas difíciles, mientras que la versión global se lanzó agregando un apartado visual con mayor detalles interesantes y diferentes funcionalidades, que se agregaron el 12 de diciembre de 2018. Actualmente lleva 6 años de existencia en el mundo de los videojuegos móviles.
+        <br>
+        Los objetivos principales del juego son conseguir la mayor cantidad de trofeos y brawlers (personajes de Brawl Stars), para progresar en un camino de trofeos y cuando ya tienes 12 brawlers llegar a maestros en el modo competitivo. Los jugadores entran a diferentes modos de juego multijugador con sus personajes, cada uno con habilidades únicas, que luchan en diferentes modos de juego para subirlos de rango, trofeos y maestría. También los jugadores pueden unirse a clubes con sus compañeros o amigos y hacer partidas amistosas o incluso crear sus propios mapas de juego.
+        <br>
+        Los trofeos son un conteo especial de las estadísticas del jugador. Se consiguen o pierden varios al terminar una partida, más o menos cantidad depende de tu posición en ella.
+
+<h2>Camino de Trofeos</h2>
+Los trofeos que el jugador consigue con cada brawler se van acumulando en su perfil, aunque también hay un camino de trofeos global. La cantidad de trofeos que posea le permitirá desbloquear recompensas definidas en el camino de trofeos. A medida que se consigan más trofeos,2​ las recompensas aumentan y es cada vez más difícil progresar. Las recompensas que se incluyen dentro del camino de trofeos son:
+<ul>
+<li>Monedas</li>
+<li>Puntos de Fuerza</li>
+<li>Eventos</li>
+<li>Créditos</li>
+<li>Sprays</li>
+<li>Starr Drops</li>
+<li>Blines</li>
+</ul>
+<h2>Monedas y divisas del juego</h2>
+<h3>Monedas:</h3>
+Es la divisa principal del juego. Se puede obtener principalmente de la tienda, de las maestrías y del Brawl Pass, aunque también de las Starr Drops y de ciertos eventos. Se usa para mejorar brawlers y para comprar sus habilidades, aunque también se pueden comprar aspectos plateados y dorados de los brawlers con esta divisa.
+<h3>Gemas:</h3>
+Las gemas son la moneda premium del juego. Su diseño es similar al de las gemas de otros juegos de Supercell. Se obtienen principalmente comprándolos en la tienda, aunque se pueden obtener gratuitamente en el Brawl Pass o en eventos. Se usan para comprar monedas, aspectos, reacciones y sprays, y también ofertas de la tienda y/o para desbloquear brawlers. Antiguamente se podían usar para comprar el Brawl Pass, aunque está opción se eliminó el 4 de enero de 2024 en la temporada 21.
+<h3>Puntos de fuerza:</h3>
+Los puntos de fuerza son monedas cuyo único y principal uso es mejorar brawlers, junto con las monedas. Se obtienen en el Brawl Pass, en las maestrías y en las Starr Drops.
+<h3>Créditos:</h3>
+Los créditos son divisas que sirven para desbloquear brawlers en el Camino Starr. Se obtienen en el Brawl Pass, en las maestrías y raramente en las Starr Drops.
+<h3>Blines:</h3>
+Los blines son monedas que fueron añadidas el 24 de abril de 2023, en la Temporada 18, para sustituir a los puntos estelares. Sirven como alternativa gratuita para comprar cosméticos. Se obtiene principalmente en el modo Competitivo, en el Brawl Pass de pago y en las cajas de trofeos.
+<h3>Experiencia</h3>
+Eran la divisa que servía para progresar en el Brawl Pass, se obtenía en las misiones del Brawl Pass y diariamente. Previo al 12 de diciembre del 2023, se denominaban Fichas de batalla.
+<h2>Recompensas del juego</h2>
+<h3>Premios Starr </h3>
+Tras eliminar las cajas, los jugadores reclamaban un nuevo sistema de recompensas aleatorias. Los Premios Starr tienen distintas rarezas y cuatro oportunidades de mejorarla, a cada oportunidad puede mejorar la rareza o quedarse como estaba, cada una las rarezas tienen distinta probabilidad de aparecer. Se pueden obtener en eventos, el camino de trofeos, niveles del Brawl Pass y como recompensas por victorias diarias.
+También existen los Premios Starr competitivos, los cuales solo se pueden obtener en el modo Competitivo. Se obtienen al alcanzar las correspondientes marcas II y III en cada rango principal (menos en Maestros).
+<br><br>
+<div style="text-align: center;">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/TTSlo1zf90c" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+        <br>
+        <div class="div2">
+            Contacto: Telefono 1: 833-153-85-35
+                    <p>Telefono 2: 833-539-58-76</p>
+                    <p>Correo 1: leonardoramiere@gmail.com</p>
+                    <p>Correo 2: niggabro@gmail.com</p>
+                    <p>Creditos: AshBS</p>
+                    <ul>
+                        <li><p><td><a href="practicas/practica 1.html">Practica 1</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 2.html">Practica 2</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 3.html">Practica 3</a></td></p></li>
+                        <li><p><td><a href="practicas/practica 4.html">Practica 4</a></td></p></li>
+                    </ul>
+        </div>
+    </body>
+</html>

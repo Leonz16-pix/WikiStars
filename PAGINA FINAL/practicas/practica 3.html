@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica 3 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .apartado{
+                background-color: darkblue;
+                padding: 10px;
+                margin-bottom: 0px;
+                border: 0px solid #ccc
+            }
+            .apartadofinal{
+                background-color: darkblue;
+                padding: 10px;
+                margin-bottom: 0px;
+                border: 0px solid #ccc;
+            }
+            
+            .contenedor-maq {
+            display: flex;
+            justify-content: flex-end; 
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column; 
+            }
+            .contenido-maq {
+            display: flex; 
+            align-items: center; 
+            gap: 20px;
+            }
+            .texto-columnas-maq{
+            column-count: unset;
+            column-gap: unset;
+            display: block; 
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            }
+            .titulo-maq{
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-align: left;
+            margin-bottom: 10px;
+            }
+            .responsive-img-maq {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            }
+
+            .contenedor-car {
+            display: flex;
+            justify-content: flex-end; 
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column
+            }
+            .titulo-car {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-align: right; 
+            margin-bottom: 20px;
+            }
+            .contenido-car {
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            flex-direction: row-reverse; 
+            }
+            .texto-car {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: right; 
+            }
+            .responsive-img-car {
+            width: 400px; 
+            height: auto;
+            flex-shrink: 0; 
+            }
+            .responsive-img-logobat{
+    width: 100px; 
+    max-width: 100%;
+    height: auto; 
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+            }
+        </style>
+    </head>
+    <body style="background-color: darkgray;">
+        <div class="apartado">
+            <h1><p align="right"><font color="#FFFFFF">Practica 3. Elementos basicos: Titulos, parrafos, imagenes, hipervinculos, videos.</font></p></left></h1>
+            <img src="logo cobat.jpeg" class="responsive-img-logobat">
+        </div>
+        <p><h1>Ejercicio practica 3</h1></p>
+        <p><h2>Ejercicio pactica 3</h2></p>
+        <p><h3>Ejercicio pactica 3</h3></p>
+        <p><h4>Ejercicio pactica 3</h4></p>
+        <p><h5>Ejercicio pactica 3</h5></p>
+        <p><h6>Ejercicio pactica 3</h6></p>
+        <hr size="3" color="#000000">
+        <div class="contenedor-maq">
+            <h2 class="titulo-maq">¿Que es la maquetacion?</h2>
+            <div class="contenido-maq">
+                <div class="texto-columnas-maq">
+                En el diseño editorial, la maquetación es la composición de texto, imagen u otros elementos en las páginas de medios impresos y electrónicos,
+                como libros, diarios y revistas. Estrictamente, el acto de maquetar tan solo se relaciona con la distribución de los elementos en un espacio
+                determinado de la página, mientras que el diseño editorial incluye fases más amplias del proceso, desde el proyecto gráfico, hasta los procesos
+                de producción denominados preprensa (preparación para impresión), prensa (impresión) y posprensa (acabados).
+                </div>
+                <img src="maqetacion.jpg"  class="responsive-img-maq">
+            </div>
+        </div>          
+        <hr size="3" color="#000000">
+        <div class="contenedor-car">
+            <h2 class="titulo-car">Caracteristicas de la maquetación</h2>
+            <div class="contenido-car">
+                <div class="texto-car">
+                Estructura HTML: la maquetación web comienza con la estructura básica del documento HTML (HyperText Markup Language),
+                que define los elementos fundamentales de la página, como encabezados, párrafos, listas, enlaces y otros elementos.
+                Diseño Responsivo: una característica esencial en la maquetación web moderna es el diseño responsivo, que asegura 
+                que el sitio web se vea y funcione bien en una variedad de dispositivos y tamaños de pantalla.
+                </div>
+                <img src="caracteristicas.jpg" class="responsive-img-car">
+            </div>
+        </div>
+        <hr size="3" color="#000000">
+        <div style="text-align: center;">
+            <video width="550" height="360" controls autoplay loop >
+                <source src="WhatsApp Video 2025-02-17 at 11.22.20 PM.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br><br><br>
+        <div class="apartadofinal" style="position: absolute; bottom: 1; width: 100%; text-align: left;">
+            <a href="https://youtube.com/" target="_blank"><font color=#FFFFFF>Visitar YouTube</font></a><br><a href="https://www.instagram.com" target="_blank"><font color=#FFFFFF>Visitar Instagram</font></a>
+    </body>
+</html>
